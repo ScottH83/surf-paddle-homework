@@ -1,0 +1,276 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  width: 100%; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+  body a {
+    text-decoration: none; }
+
+header {
+  background: url("http://blogs.oregonstate.edu/seagrantscholars/files/2016/01/ocean_waves_ventura_california_usa_20120704.jpg");
+  color: white;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  position: relative; }
+  header .blog-logo-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 1; }
+    header .blog-logo-container img {
+      width: 50px; }
+  header .hero-logo-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    z-index: 10; }
+    header .hero-logo-container h1 {
+      font-size: 6rem;
+      margin: 0 auto;
+      z-index: 1; }
+    header .hero-logo-container span {
+      z-index: 1; }
+
+header:after {
+  background: #106db3;
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.5;
+  z-index: 0; }
+
+nav {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+
+.search {
+  display: flex; }
+  .search a {
+    color: white;
+    margin: 10px;
+    z-index: 1; }
+
+main {
+  border-bottom: 1px solid grey;
+  width: 100%; }
+  main .main-text-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    width: 80%; }
+    main .main-text-content .text-1 {
+      margin: 0 auto;
+      padding: 30px;
+      width: 60%; }
+      main .main-text-content .text-1 .feature-text-container {
+        margin-top: 30px; }
+      main .main-text-content .text-1 .span-bold-container {
+        border-left: 1px solid grey;
+        font-size: 2rem;
+        font-weight: 450;
+        margin-top: 30px;
+        margin-bottom: 30px; }
+    main .main-text-content .text-2 {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 30%; }
+      main .main-text-content .text-2 .board-image {
+        margin-bottom: 60px;
+        position: relative; }
+      main .main-text-content .text-2 .board-image:after {
+        background: #106db3;
+        content: " ";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0.5;
+        z-index: 0; }
+      main .main-text-content .text-2 .profile-image {
+        border-radius: 10px;
+        width: 70px; }
+
+.header-story-container h2 {
+  font-size: 3rem;
+  font-weight: 600; }
+.header-story-container .profile-image {
+  border-radius: 10px;
+  position: relative;
+  width: 30px; }
+.header-story-container .profile-image:after {
+  background: #106db3;
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.5;
+  z-index: 0; }
+.header-story-container .profile-header {
+  align-items: center;
+  display: flex;
+  font-size: .75rem; }
+  .header-story-container .profile-header a {
+    color: #106db3;
+    margin-left: 10px; }
+
+.bar-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  width: 50%; }
+  .bar-1 a {
+    color: #106db3;
+    margin-top: 15px; }
+  .bar-1 .user-media-links {
+    display: flex;
+    flex-direction: row; }
+    .bar-1 .user-media-links a {
+      color: #b2bfcb;
+      margin: 5px;
+      text-decoration: none; }
+
+.main-social-container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  margin-bottom: 60px; }
+  .main-social-container .social-media-links {
+    background: #106db3;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px; }
+
+.footer-header {
+  color: #053150;
+  font-size: 4rem;
+  margin: 30px;
+  text-align: center; }
+
+.image-links-container {
+  display: flex;
+  position: relative;
+  width: 100%; }
+  .image-links-container .image-links {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 25%; }
+  .image-links-container .image-links:hover {
+    opacity: 0.5;
+    z-index: 1; }
+
+.image-links-container:after {
+  background: #106db3;
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none; }
+
+.copy-container {
+  align-items: center;
+  background: #083452;
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+  .copy-container .logo-copyright {
+    align-items: center;
+    color: #EFF5F9;
+    display: flex;
+    padding: 20px;
+    width: 40%; }
+    .copy-container .logo-copyright img {
+      background: #083452;
+      margin-right: 30px;
+      width: 15%; }
+  .copy-container .foot-nav-container {
+    display: flex;
+    width: 28%; }
+    .copy-container .foot-nav-container p {
+      color: #EFF5F9;
+      margin-left: 10px; }
+    .copy-container .foot-nav-container .foot-nav-item-2 {
+      border-left: 1px solid #EFF5F9; }
+    .copy-container .foot-nav-container .foot-nav-item-3 {
+      border-left: 1px solid #EFF5F9; }
+    .copy-container .foot-nav-container .foot-nav-item-4 {
+      border-left: 1px solid #EFF5F9; }
+
+/*# sourceMappingURL=main.css.map */
